@@ -5,22 +5,24 @@
     <title>Liquor Store</title>
 </head>
 <body>
-<center>
+
+<div style="text-align: center;">
     <h1>
-        Select the type of Liquor
+        Pick a Liquor of your choice!
     </h1>
-    <form method="post" action="SelectLiquor">
+    <form method="post" action="/SelectLiquor">
+<!--                            should action be result.jsp?-->
         <br>
-        <select name="Type" size="1">
+        <label>Choose :<select name="Type" size="1">
             <option>WINE</option>
             <option>WHISKY</option>
             <option>BEER</option>
 
-        </select>
+        </select></label>
         <br><br>
         <input type="submit">
     </form>
-</center>
+</div>
 
 
 </body>
