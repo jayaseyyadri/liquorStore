@@ -4,7 +4,7 @@ import com.sample.model.LiquorType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LiquorService {
+public class Liquor {
 
         public List getAvailableBrands(LiquorType type){
 

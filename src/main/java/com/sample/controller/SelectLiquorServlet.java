@@ -1,5 +1,6 @@
-package com.sample;
+package com.sample.controller;
 
+import com.sample.Liquor;
 import com.sample.model.LiquorType;
 
 import javax.servlet.RequestDispatcher;
@@ -23,10 +24,10 @@ public class SelectLiquorServlet extends HttpServlet {
 
         String liquorType = req.getParameter("Type");
 
-        LiquorService liquorService = new LiquorService();
+        Liquor liquor = new Liquor();
         LiquorType l = LiquorType.valueOf(liquorType);
 
-        List liquorBrands = liquorService.getAvailableBrands(l);
+        List liquorBrands = liquor.getAvailableBrands(l);
 
         req.setAttribute("brands", liquorBrands);
         RequestDispatcher view = req.getRequestDispatcher("/webapp/result.jsp");

@@ -3,10 +3,10 @@ package com.sample.dao;
 public class Config {
 
     public String getUrl(){
-        return "jdbc:mysql://localhost/database_name?serverTimezone=UTC&useSSL=false\"";
+        return "jdbc:mysql://localhost/practice_db?serverTimezone=UTC&useSSL=false";
     }
     public String getUser(){
- return "rooe";
+        return "root";
     }
     public String getPassword(){
         return "codeup";
